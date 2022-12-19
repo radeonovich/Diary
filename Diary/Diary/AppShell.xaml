@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diary.AppShell"
+        xmlns:views="clr-namespace:Diary.Views">
+    <TabBar>
+        <ShellContent
+            Title="Вход"
+            Icon="iconLogin.png"
+            ContentTemplate="{DataTemplate views:LoginPage}">
+            </ShellContent>
+        <ShellContent
+            Title="Записи"
+            Icon="iconList.png"
+            ContentTemplate="{DataTemplate views:NotesPage}">
+        </ShellContent>
+    </TabBar>
+</Shell>
